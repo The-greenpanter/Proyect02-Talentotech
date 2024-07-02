@@ -1,8 +1,12 @@
-import Forma from "../assets/img/Forma.jpg";
-export const Pic4 = () => {
+import PropTypes from 'prop-types'
+import Forma from "../assets/img/guitarra.jpg";
+export const Pic4 = ({className = ''} ) => {
     return (
-      <div>
-          <img src={Forma} alt=''/>
+      <div className={`image-container ${className}`}>
+          <img src={Forma} alt=''className='image'/>
       </div>
     )
   }
+  Pic4.propTypes = {
+    className: PropTypes.string
+  };

@@ -5,6 +5,8 @@ import { Pic3 } from './components/Pic3';
 import { Pic4 } from './components/Pic4';
 import { Pic5 } from './components/Pic5';
 import { Pic6 } from './components/Pic6';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 import { Navegation } from './components/Navegation';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -13,13 +15,16 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <div>
+      <h1 className='title text-center my-3' > Galery Proyect</h1>
+    </div>
       <Routes>
-        <Route path='/Pic' element={<Pic />}/>
-        <Route path='/Pic2' element={<Pic2  />}/>
-        <Route path='/Pic3' element={<Pic3  />}/>
-        <Route path='/Pic4' element={<Pic4  />}/>
-        <Route path='/Pic5' element={<Pic5  />}/>
-        <Route path='/Pic6' element={<Pic6  />}/>
+        <Route path='/Pic' element={<Pic className='image-size' />}/>
+        <Route path='/Pic2' element={<Pic2 className='image-size' />}/>
+        <Route path='/Pic3' element={<Pic3 className='image-size' />}/>
+        <Route path='/Pic4' element={<Pic4 className='image-size' />}/>
+        <Route path='/Pic5' element={<Pic5 className='image-size' />}/>
+        <Route path='/Pic6' element={<Pic6 className='image-size' />}/>
       </Routes>
       <Navegation/>
     </BrowserRouter>

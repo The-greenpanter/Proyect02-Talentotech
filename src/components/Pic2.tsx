@@ -1,10 +1,15 @@
 import Lab from "../assets/img/Lab.jpg";
-export const Pic2 = () => {
+import PropTypes from 'prop-types'
+
+export const Pic2 = ({className = ''} ) => {
     return (
      <>
-     <div>
-          <img src={Lab} alt=''/>
+     <div className={`image-container ${className}`}>
+          <img src={Lab} alt=''className='image'/>
       </div>
       </>
     )
   }
+  Pic2.propTypes = {
+    className: PropTypes.string
+  };

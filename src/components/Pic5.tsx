@@ -1,8 +1,13 @@
 import Botton from "../assets/img/botton.jpg";
-export const Pic5 = () => {
+import PropTypes from 'prop-types'
+
+export const Pic5 = ({className = ''} ) => {
     return (
-      <div>
-          <img src={Botton} alt=''/>
+      <div className={`image-container ${className}`}>
+          <img src={Botton} alt=''className='image'/>
       </div>
     )
   }
+  Pic5.propTypes = {
+    className: PropTypes.string
+  };
