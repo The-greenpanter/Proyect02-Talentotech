@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export const Pic6 = ({className = ''} ) => {
     return (
       <div className={`image-container ${className}`}>
-          <img src={mountain} alt=''className='image'/>
+          <img src={mountain} alt=''className='image-size'/>
       </div>
     )
   }

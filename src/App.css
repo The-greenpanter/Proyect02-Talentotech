@@ -1,6 +1,7 @@
 .image-size {
-  width: 150px;
-  height: 150px;
+  width: 245px;
+  /* height: auto; */
+  max-height: 200px;
   border-radius: 5px;
 }
 
@@ -9,6 +10,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 
 .links {
@@ -27,7 +30,7 @@
 
 .image-container {
   width: 100%;
-  height: 500px;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,12 +51,12 @@ figcaption {
 
 figure {
   justify-content: center;
-  height: 20%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background: #373B44;
-  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  
-  background: linear-gradient(to right, #4286f4, #373B44); 
+  background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);  
+  background: linear-gradient(to bottom, #4286f4, #373B44); 
 }
 
 h1.title {
