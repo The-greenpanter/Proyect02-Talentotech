@@ -5,6 +5,7 @@ import { Pic3 } from './components/Pic3';
 import { Pic4 } from './components/Pic4';
 import { Pic5 } from './components/Pic5';
 import { Pic6 } from './components/Pic6';
+import { Navegation } from './components/Navegation';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/Pic5' element={<Pic5  />}/>
         <Route path='/Pic6' element={<Pic6  />}/>
       </Routes>
+      <Navegation/>
     </BrowserRouter>
     </>
   )
