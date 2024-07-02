@@ -1,8 +1,10 @@
 import Lab from "../assets/img/Lab.jpg";
 export const Pic2 = () => {
     return (
-      <div>
+     <>
+     <div>
           <img src={Lab} alt=''/>
       </div>
+      </>
     )
   }
