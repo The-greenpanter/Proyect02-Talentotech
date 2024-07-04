@@ -5,15 +5,14 @@ import { Pic3 } from './components/Pic3';
 import { Pic4 } from './components/Pic4';
 import { Pic5 } from './components/Pic5';
 import { Pic6 } from './components/Pic6';
-
-import './App.css'
+import 'bootstrap/dist/css/bootstrap.css';
 import { Navegation } from './components/Navegation';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
-    <div className='container'>
+    <div className=''>
       <div>
         <h1 className='title text-center my-3' > Galery Proyect</h1>
       </div>
