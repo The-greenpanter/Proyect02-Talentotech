@@ -1,14 +1,22 @@
-.image-size {
-  width: 250px;
-  height: auto;
-  max-height: 250px;
+body{
+  background:-webkit-linear-gradient(to bottom,  #EF6024,#F0941F);
+  background:linear-gradient(to bottom, #EF6024,#F0941F) ;
+}
+.bigpic{
+  inline-size: 100%;
+  block-size: 3000px;
+}
+.image-sizes {
+  inline-size: 250px;
+  block-size: auto;
+  max-block-size: 250px;
   border-radius: 5px;
 }
 
 .father {
-  height: 250px;
-  width: 700px;
-  display: inline;
+  block-size: 500px;
+  inline-size: 700px;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 0;
@@ -30,16 +38,16 @@
 }
 
 .image-container {
-  width: 100%;
-  height: 800px;
+  inline-size: 100%;
+  block-size: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .image {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0,0, 0,0.8);
@@ -52,12 +60,12 @@ figcaption {
 
 figure {
   justify-content: center;
-  height: 100%;
+  block-size: 100%;
   display: flex;
   flex-direction: column;
   background: #373B44;
-  background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);  
-  background: linear-gradient(to bottom, #4286f4, #373B44); 
+  background: -webkit-linear-gradient(to bottom,#90A19D,#196774, #363432);  
+  background: linear-gradient(to bottom,#90A19D,#196774, #363432); 
 }
 
 h1.title {

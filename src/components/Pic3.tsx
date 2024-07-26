@@ -1,4 +1,4 @@
-import Color from "../assets/img/COLOR_POP.jpg";
+import Color from "../assets/img/color2.png";
 import PropTypes from 'prop-types'
 
 export const Pic3 = ({className = ''} ) => {
